@@ -57,3 +57,15 @@ test('should return the promise the handler returns', async t => {
   let resp = await hpc.call('users', 'getUser', {})
   t.deepEqual(resp, user)
 })
+
+test('should return an error message if the promise rejects', async t => {
+  let hpc = HPC()
+  hpc.service({
+    async someMethod(){
+      throw new Error('Some error')
+    }
+  }, 'service')
+
+  let resp = await hpc.call('service', 'someMethod', {})
+  t.eq(resp.internal, 'InternalError')
+})

@@ -14,9 +14,13 @@ export function HPC(){
     
     
     // Call the method
-    let res = method(request)
-
-    return res
+    try {
+      let res = await method(request)  
+      return res
+    } catch (err) {
+      console.log(err)
+      return {internal: 'InternalError'}
+    }
   }
 
   return {service, call, services}

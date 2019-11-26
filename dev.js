@@ -5,6 +5,8 @@ let server = makeServer()
 const getById = async ({id}) => {
   if(!id) return {error: 'invalid id'}
 
+  throw new Error("Some error")
+
   return {id, name: "Some dude!"}
 }
 
