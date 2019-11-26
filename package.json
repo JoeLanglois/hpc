@@ -1,7 +1,7 @@
 {
   "name": "hpc.io",
-  "version": "1.0.3",
-  "main": "index.js",
+  "version": "1.0.4",
+  "main": "src/index.js",
   "source": "src/client.js",
   "module": "dist/hpc.mjs",
   "unpkg": "dist/hpc.umd.js",
