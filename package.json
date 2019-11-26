@@ -1,0 +1,12 @@
+{
+  "name": "hpc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "zora": "^3.1.6"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
