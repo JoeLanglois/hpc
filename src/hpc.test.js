@@ -69,3 +69,8 @@ test('should return an error message if the promise rejects', async t => {
   let resp = await hpc.call('service', 'someMethod', {})
   t.eq(resp.internal, 'InternalError')
 })
+
+test('should have an internal service with an endpoints method', t => {
+  let hpc = HPC()
+  t.equal(Object.keys(hpc.services), ['internal'])
+})

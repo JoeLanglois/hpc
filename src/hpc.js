@@ -1,5 +1,19 @@
+let internalService = services => ({
+  endpoints: () => {
+    let data = Object.keys(services).filter(name => name !== 'internal').map(name => {
+      return {name, endpoints: Object.keys(services[name])}
+    })
+
+    return {
+      services: data
+    }
+  }
+})
+
 export function HPC(){
   let services = {}
+
+  services.internal = internalService(services)
 
   function service(serviceObj, name){
     services[name] = serviceObj
