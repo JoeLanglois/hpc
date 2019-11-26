@@ -1,6 +1,6 @@
 {
   "name": "hpc.io",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "source": "src/client.js",
   "module": "dist/hpc.mjs",
