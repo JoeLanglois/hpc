@@ -1,10 +1,10 @@
 {
-  "name": "hpc",
-  "version": "1.0.0",
+  "name": "hpc.io",
+  "version": "1.0.2",
   "main": "index.js",
   "source": "src/client.js",
-  "module": "dist/foo.mjs",
-  "unpkg": "dist/foo.umd.js",
+  "module": "dist/hpc.mjs",
+  "unpkg": "dist/hpc.umd.js",
   "license": "MIT",
   "devDependencies": {
     "microbundle": "^0.11.0",
